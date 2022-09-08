@@ -1,1 +1,1 @@
-Assembler
+Executable name
