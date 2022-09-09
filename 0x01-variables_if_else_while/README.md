@@ -1,1 +1,1 @@
-alphABET
+Omit some letters
