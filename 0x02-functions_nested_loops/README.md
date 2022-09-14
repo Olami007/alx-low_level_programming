@@ -1,1 +1,1 @@
-Natral numbers
+Natural numbers
