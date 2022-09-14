@@ -42,9 +42,9 @@ int main(void)
 	{
 		if (f10 > 0)
 		{
-			printf("%u", f10);
+			printf("%lu", f10);
 		}
-		initials = numLength(mx) - 1 -numLength(f1);
+		initials = numLength(mx) - 1 - numLength(f1);
 
 		while (f10 > 0 && initials > 0)
 		{
