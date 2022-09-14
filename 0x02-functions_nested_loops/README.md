@@ -1,1 +1,1 @@
-Print to 98
+Natral numbers
