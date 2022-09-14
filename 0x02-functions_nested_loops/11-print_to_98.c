@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - Print  to 98 counts
+ * print_to_98 - print n to 98 counts
  * with each digit separated by comma and space
  * @n: input
  */
@@ -21,10 +21,10 @@ void print_to_98(int n)
 	{
 		for (count = n; count < 98; count++)
 		{
-			printf("%d\n", count);
+			printf("%d, ", count);
 		}
 	}
 	
-	/*always end with 98 */
+	/* always end with 98 */
 	printf("98\n");
 }
