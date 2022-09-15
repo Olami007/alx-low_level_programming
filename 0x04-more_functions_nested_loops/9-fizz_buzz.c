@@ -1,37 +1,33 @@
 #include <stdio.h>
 
 /**
- * main - program that prints either number
- * or fizz or buzz or fizzBuzz
- *
- *
+ * main - entry point
+ * Description:  a program that prints the numbers from 1 to 100
+ * and replaces multiples of 3, 5 and 3 and 5 with specific words
  * Return: returns 0
  */
 
 int main(void)
 {
-	int num = 1;
+	int num;
 
-	while (num++ < 100)
+	for (num = 1; num <= 100; num++)
 	{
 		if ((num % 3 == 0) && (num % 5 == 0))
 		{
 			printf("FizzBuzz ");
 		}
-		else if ((num % 3) == 0)
+		else if (num == 100)
+		{
+			printf("Buzz ");
+		}
+		else if (num % 3 == 0)
 		{
 			printf("Fizz ");
 		}
-		else if ((num % 5) == 0)
+		else if (num % 5 == 0)
 		{
-			if (num != 100)
-			{
-				printf("Buzz ");
-			}
-			else
-			{
-				printf("Buzz");
-			}
+			printf("Buzz");
 		}
 		else
 		{
