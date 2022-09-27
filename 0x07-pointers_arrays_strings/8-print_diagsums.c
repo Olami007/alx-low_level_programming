@@ -11,17 +11,19 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i, j, p, l = 0, r = 0;
+	int diagonal_sum_1 = 0;
+	int diagonal_sum_2 = 0;
+	int row, 1;
 
-	for (i = 0; i < size; i++)
+	for (row = 0; row < size; row++)
 	{
-		p = (i * size) + i;
-		l += *(a + p);
+		i = (row * size) + row;
+		diagonal_sum_1 += a[i];
 	}
-	for (j = 0; j < size; j++)
+	for (row = 1; row <= size; row++)
 	{
-		p = (j * size) + (size - l - j);
-		r += *(a + p);
+		i = (row * size) - row;
+		diagonal_sum_2 += a[i];
 	}
-	printf("%i, %i\n", l, r);
+	printf("%d, %d\n", diagonal_sum_1, diagonal_sum_2);
 }
