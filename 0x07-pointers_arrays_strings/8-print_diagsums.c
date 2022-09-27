@@ -5,8 +5,6 @@
 * print_diagsums - prints the sums of the two diagonals of a square matrix
 * @a: pointer to start of matrix
 * @size: width of matrix column
-*
-* Return: void
 */
 
 void print_diagsums(int *a, int size)
@@ -20,10 +18,13 @@ void print_diagsums(int *a, int size)
 		i = (row * size) + row;
 		diagonal_sum_1 += a[i];
 	}
+	
+	
 	for (row = 1; row <= size; row++)
 	{
 		i = (row * size) - row;
 		diagonal_sum_2 += a[i];
 	}
+	
 	printf("%d, %d\n", diagonal_sum_1, diagonal_sum_2);
 }
